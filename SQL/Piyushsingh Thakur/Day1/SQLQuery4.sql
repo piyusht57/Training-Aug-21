@@ -1,0 +1,11 @@
+CREATE TABLE JOBS
+(
+JobId INT PRIMARY KEY identity(1,1),
+JobTitle VARCHAR(10) NOT NULL DEFAULT ' ',
+MinSalary decimal(6,0) DEFAULT NULL,
+MaxSalary decimal(6,0) DEFAULT 8000
+);
+
+INSERT INTO JOBS ('developer',4000,10000)
+
+SELECT * FROM JOBS

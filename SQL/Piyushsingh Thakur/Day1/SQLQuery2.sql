@@ -1,0 +1,10 @@
+CREATE TABLE JOBHISTORY
+(
+EmployeeId INT PRIMARY KEY identity(1,1),
+StartDate Date NOT NULL,
+EndDate Date CHECK (EndDate LIKE '--/--/----'), 
+JobId INT NOT NULL,
+DepartmentId INT
+);
+
+INSERT INTO JOBHISTORY VALUES ('2021-02-08','04/08/2021',2,4);
