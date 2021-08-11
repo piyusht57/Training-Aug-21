@@ -1,19 +1,50 @@
-create table inventory(
-ProductId INT PRIMARY KEY Identity(1,1),
-ProdName varchar(50),
-ProdPrice decimal(8,2),
+CREATE DATABASE CARS
+
+USE CARS
+
+
+
+CREATE TABLE Inventory
+(
+ProductId INT PRIMARY KEY IDENTITY(1,1),
+ProdName VARCHAR(50) NOT NULL,
+ProdPrice DECIMAL(8,2) NOT NULL,
 );
-create table sales(
-SalesId INT PRIMARY KEY Identity(1,1),
-SalesPerson int,
-ProductId int,
-CONSTRAINT FK_SalesPerson FOREIGN KEY (SalesPerson) REFERENCES employee(EmployeeId),
-CONSTRAINT FK_ItemId FOREIGN KEY (ProductId) REFERENCES inventory(ProductId),
+
+
+CREATE TABLE Sales
+(
+SalesId INT PRIMARY KEY IDENTITY(1,1),
+SalesPerson INT NOT NULL,
+ProductId INT NOT NULL,
+CONSTRAINT FK_SalesPerson FOREIGN KEY (SalesPerson) REFERENCES Employee(EmployeeId),
+CONSTRAINT FK_ItemId FOREIGN KEY (ProductId) REFERENCES Inventory(ProductId),
 );
-create table employee(
-EmployeeId INT PRIMARY KEY Identity(1,1), 
-EmpName varchar(50),
-EmpLastName varchar(50),
-EmpType varchar(10),
-CommisionPer decimal(4,2)
+
+
+CREATE TABLE Employee
+(
+EmployeeId INT PRIMARY KEY IDENTITY(1,1), 
+EmpName VARCHAR(50) NOT NULL,
+EmpLastName VARCHAR(50) NOT NULL,
+EmpType VARCHAR(10) NOT NULL,
+CommisionPer DECIMAL(4,2) NOT NULL
 );
+
+
+
+INSERT INTO Inventory VALUES ('Audi',835689.00),
+('TATA',296588.00),
+('Hyundai',895672.00),
+('Suzuki',589742.00),
+('Tesla',85285);
+
+INSERT INTO Employee VALUES ('PIYUSH','THAKUR','DOT NET',50.00),
+('MILAN','PATEL','Manager',16.70),
+('HIT','SHAH','MARKETING',2.20)
+
+
+INSERT INTO Sales VALUES (2,3),
+(2,2),
+(3,2),
+(2,5);
