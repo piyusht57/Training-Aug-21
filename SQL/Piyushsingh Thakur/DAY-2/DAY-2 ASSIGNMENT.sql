@@ -1,10 +1,10 @@
 ----------UPDATE QUERIES
 ----------TASK1
-ALTER TABLE Employees DROP CONSTRAINT ukEmail
+ALTER TABLE Employees DROP CONSTRAINT ukemail
 
 UPDATE Employees SET Email='not available'
 
-ALTER TABLE Employees ADD CONSTRAINT ukEmail UNIQUE (Email)
+ALTER TABLE Employees ADD CONSTRAINT ukemail UNIQUE (Email)
 ----------TASK2
 UPDATE Employees SET Email='not available', CommissionPct=0.10
 
