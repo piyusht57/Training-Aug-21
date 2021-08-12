@@ -3,7 +3,7 @@ USE [Day-1]
 CREATE TABLE COUNTRIES
 (
 countryId TINYINT  PRIMARY KEY IDENTITY(1,1),
-countryName VARCHAR(10) not null UNIQUE CHECK ( countryName in('india','china','italy')),
+countryName VARCHAR(10) NOT NULL UNIQUE CHECK ( countryName in('india','china','italy')),
 regionalId TINYINT UNIQUE
 )
 INSERT INTO COUNTRIES VALUES ('china', 02)

@@ -33,8 +33,8 @@ UPDATE Employees
 			THEN (Salary+(0.15*Salary))
 		WHEN DepartmentID=110
 			THEN (Salary+(0.10*Salary))
-		ELSE 
-			Salary
+		ELSE +
+			Salary+
 		END
 ----------TASK9
 
@@ -47,7 +47,7 @@ SELECT * FROM Employees
 SELECT FirstName,LastName FROM Employees
 
 ----------TASK3
-SELECT FirstName AS 'Employee Name' FROM Employees
+SELECT FirstName = 'Employee Name' FROM Employees
 
 ----------TASK4
 SELECT * FROM Employees WHERE FirstName='Steven'
@@ -71,7 +71,7 @@ SELECT * FROM Employees WHERE FirstName LIKE 'N%'
 SELECT DISTINCT DepartmentID FROM employees;
 
 ----------TASK11
-SELECT * FROM Employees ORDER BY FirstName DESC
+SELECT * FROM Employees ORDER BY -++++++++FirstName DESC
 
 ----------TASK12
 SELECT EmployeeID,  CONCAT(FirstName,' ', LastName) AS names, Salary FROM Employees ORDER BY Salary ASC
