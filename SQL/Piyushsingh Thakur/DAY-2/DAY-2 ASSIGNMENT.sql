@@ -1,4 +1,10 @@
+
+USE day6
+
+
 ----------UPDATE QUERIES
+
+
 ----------TASK1
 ALTER TABLE Employees DROP CONSTRAINT ukemail
 
