@@ -4,7 +4,7 @@ USE day6
 
 ----------UPDATE QUERIES
 
-
+use EXE
 ----------TASK1
 ALTER TABLE Employees DROP CONSTRAINT ukemail
 
@@ -33,19 +33,15 @@ UPDATE Employees SET JobId='SH_CLERK' WHERE EmployeeID=118 AND DepartmentID=30 A
 UPDATE Employees 
 	SET Salary = 
 		CASE 
-		WHEN DepartmentID=40 
-			THEN Salary+((0.25*Salary))
-		WHEN DepartmentID=90
-			THEN (Salary+(0.15*Salary))
-		WHEN DepartmentID=110
-			THEN (Salary+(0.10*Salary))
-		ELSE +
-			Salary+
+		WHEN DepartmentID=40 THEN Salary+((0.25*Salary))
+		WHEN DepartmentID=90 THEN (Salary+(0.15*Salary))
+		WHEN DepartmentID=110 THEN (Salary+(0.10*Salary))
+		ELSE + Salary
 		END
 ----------TASK9
 
 
-----------TASKc SELECT queries
+----------TASK SELECT queries
 ----------TASK1
 SELECT * FROM Employees
 

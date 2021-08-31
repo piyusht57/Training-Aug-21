@@ -47,12 +47,12 @@ SELECT * FROM Incentives
 
 
 
-----TASK-1
-Get difference between JOINING_DATE and INCENTIVE_DATE from employee and incentives table
+---TASK-1
+---Get difference between JOINING_DATE and INCENTIVE_DATE from employee and incentives table
 SELECT FirstName,DATEDIFF(DAY,JoiningDate,IncentiveDate) AS 'Difference' FROM Employee E INNER JOIN Incentives Em on E.EmployeeID = Em.EmployeeRefID
 
------TASK-2
-Select first_name, incentive amount from employee and incentives table for those employees who have incentives and incentive amount greater than 3000
+---TASK-2
+---Select first_name, incentive amount from employee and incentives table for those employees who have incentives and incentive amount greater than 3000
 
 
 SELECT FirstName,IncentiveAmount 
@@ -63,20 +63,20 @@ AND IncentiveAmount >3000;
 
 -----TASK-3
 
-Select first_name, incentive amount from employee and incentives table for all employees even if they didn’t get incentives.
+---Select first_name, incentive amount from employee and incentives table for all employees even if they didn’t get incentives.
   
 
-  -----TASK-4
-  Select EmployeeName, ManagerName from the employee table.
+---TASK-4
+--- Select EmployeeName, ManagerName from the employee table.
 
  SELECT CONCAT(E1.FIRSTNAME,' ',E1.LASTNAME) AS 'EMPLOYEE NAME',CONCAT(E2.FIRSTNAME,' ',E2.LASTNAME) AS 'MANAGER NAME'
  FROM Employee E1 LEFT JOIN Employee E2
  ON E1.Manager_ID = E2.EmployeeID
 
 
- ------TASK-5
- Select first_name, incentive amount from  employee and incentives table for all employees even if they didn’t get incentives and set
- incentive amount as 0 for those employees who didn’t get incentives.
+---TASK-5
+---Select first_name, incentive amount from  employee and incentives table for all employees even if they didn’t get incentives and set
+---incentive amount as 0 for those employees who didn’t get incentives.
 
  
 SELECT FirstName,ISNULL(IncentiveAmount,0) 
