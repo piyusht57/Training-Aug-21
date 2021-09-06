@@ -58,6 +58,7 @@ FROM JobHistory
 WHERE DepartmentID=90
 SELECT * FROM TASK_5
 
+
 --6)Write a View to display the department name, manager name, and city.
 CREATE VIEW TASK_6
 AS
