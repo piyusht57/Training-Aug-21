@@ -277,7 +277,7 @@ WHERE DepartmentID=(SELECT DepartmentID FROM Departments WHERE DepartmentName = 
 
 
 ---3. Find the names (first_name, last_name) of the employees who have a manager who works for a department based in United States. 
---Hint : Write single-row and multiple-row subqueries
+--    Hint : Write single-row and multiple-row subqueries
 SELECT CONCAT(FirstName,' ',LastName) AS 'Employee_Name' FROM Employees
 WHERE ManagerID IN (SELECT EmployeeID FROM employees WHERE DepartmentID
 IN (SELECT DepartmentID FROM Departments WHERE LocationID

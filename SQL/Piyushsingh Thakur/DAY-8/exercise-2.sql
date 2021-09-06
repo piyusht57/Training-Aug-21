@@ -18,7 +18,7 @@ SELECT * INTO Countries FROM (SELECT * FROM CountryNew) Ctr
 INSERT INTO CountryNew (CountryId,CountryName,RegionId) VALUES
 ('C0001', 'India',1001),
 ('C0002', 'USA',1007),
-('C0003', 'UK',1003),
+('C0003', 'UK',1003)
 
 ---6.Write a SQL statement to insert one row in jobs table to ensure that no duplicate value will be entered in the job_id column.
 ALTER TABLE Jobs ADD CONSTRAINT UqJob UNIQUE(JobId)
