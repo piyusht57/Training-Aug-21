@@ -7,13 +7,14 @@ SELECT * FROM DIFF
 
 ---TASK-2
 ---Select first_name, incentive amount from employee and incentives table for those employees who have incentives and incentive amount greater than 3000
-WITH GREAT (FirstName,IncentiveAmount) AS (select e.FirstName,i.IncentiveAmount from Employee e join Incentives i on e.EmployeeId=i.EmployeeRefId
+WITH GREAT (FirstName,IncentiveAmount)
+AS (select e.FirstName,i.IncentiveAmount from Employee e join Incentives i on e.EmployeeId=i.EmployeeRefId
 WHERE i.IncentiveAmount>3000)
 SELECT * FROM GREAT
 
 
 --TASK-3
----Select first_name, incentive amount from employee and incentives table for all employees even if they didn’t get incentives.
+---Select first_name, incentive amount from employee and incentives table for all employees even if they didnï¿½t get incentives.
 WITH IncenNot (FirstName,IncentiveAmount)
 AS (select e.FirstName,i.IncentiveAmount from Employee e left join Incentives i on e.EmployeeId=i.EmployeeRefId)
 SELECT * FROM IncenNot
@@ -21,14 +22,16 @@ SELECT * FROM IncenNot
 
 ---TASK-4
 ---Select EmployeeName, ManagerName from the employee table.
-WITH EmpMan (EmployeeName,ManagerName)AS (select e.FirstName AS 'EmployeeName', f.FirstName AS 'ManagerName' FROM employee e left join employee f 
+WITH EmpMan (EmployeeName,ManagerName)
+AS (select e.FirstName AS 'EmployeeName', f.FirstName AS 'ManagerName' FROM employee e left join employee f 
 ON e.ManagerId=f.EmployeeId) SELECT * FROM EmpMan
 
 
 ---TASK-5
----Select first_name, incentive amount from employee and incentives table for all employees even if they didn’t get incentives and set incentive amount 
----as 0 for those employees who didn’t get incentives.
-WITH DNINT (FirstName,IncentiveAmount) AS (SELECT e.FirstName, CASE WHEN IncentiveAmount IS NULL THEN 0 ELSE IncentiveAmount END AS 'IncentiveAmount'
+---Select first_name, incentive amount from employee and incentives table for all employees even if they didnï¿½t get incentives and set incentive amount 
+---as 0 for those employees who didnï¿½t get incentives.
+WITH DNINT (FirstName,IncentiveAmount) 
+AS (SELECT e.FirstName, CASE WHEN IncentiveAmount IS NULL THEN 0 ELSE IncentiveAmount END AS 'IncentiveAmount'
 FROM Employee e left join Incentives i ON e.EmployeeId=i.EmployeeRefId) SELECT * FROM DNINT
 
 
