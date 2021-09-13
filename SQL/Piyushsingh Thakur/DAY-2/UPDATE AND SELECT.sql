@@ -44,7 +44,16 @@ UPDATE Employees
 		WHEN DepartmentID=110 THEN (Salary+(0.10*Salary))
 		ELSE + Salary
 		END
----9
+---9 Write a SQL statement to increase the minimum and maximum salary of PU_CLERK by 2000 as well as the salary for those 
+--   employees by 20% and commission by 10% .
+UPDATE Employees 
+	SET Salary = CASE 
+		WHEN JobId='PU_CLERK' THEN Salary+((0.20*Salary))
+		WHEN JobId='PU_CLERK' THEN CommissionPct+((0.10*CommissionPct))
+		ELSE Salary
+	END
+
+SELECT * FROM Employees
 
 
 --- SELECT queries
