@@ -64,7 +64,9 @@ AND IncentiveAmount >3000;
 -----TASK-3
 
 ---Select first_name, incentive amount from employee and incentives table for all employees even if they didn’t get incentives.
-  
+  SELECT FirstName,IncentiveAmount FROM
+  Employee E LEFT JOIN Incentives I
+  ON E.EmployeeID= I.EmployeeRefID
 
 ---TASK-4
 --- Select EmployeeName, ManagerName from the employee table.
