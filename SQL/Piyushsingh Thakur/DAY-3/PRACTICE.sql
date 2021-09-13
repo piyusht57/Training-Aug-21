@@ -68,7 +68,7 @@ SELECT STUFF('SQL Tutorial!', 13, 5, ' is fun!')
 
 SELECT SUBSTRING('SQL Tutorial', 1, 3) AS ExtractString
 
-SELECT TRANSLATE('3*[2+1]/{8-4}', '[]{}', '()()') // Results in 3*(2+1)/(8-4)
+SELECT TRANSLATE('3*[2+1]/{8-4}', '[]{}', '()()')// Results in 3*(2+1)/(8-4)
 
 SELECT TRANSLATE('Monday', 'PIYUSH', 'THAKUR')
 
@@ -82,7 +82,7 @@ SELECT Abs(-243.5) AS AbsNum
 	SELECT CEILING(25) AS CeilValue
 
 
-  SELECT COUNT(AddressID) AS NumberOfProducts FROM SalesLT.Address
+ -- SELECT COUNT(AddressID) AS NumberOfProducts FROM SalesLT.Address
 
 
 
