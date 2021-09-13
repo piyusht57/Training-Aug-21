@@ -37,7 +37,7 @@ FROM Employee e left join Incentives i ON e.EmployeeId=i.EmployeeRefId) SELECT *
 
 ---TASK-6
 ---Write a query to rank employees based on their salary for a month
-WITH RNKAS (SELECT DENSE_RANK() OVER (ORDER BY Salary DESC) [Salary_Rank],* FROM Employees) SELECT * FROM RNK
+WITH RNK AS (SELECT DENSE_RANK() OVER (ORDER BY Salary DESC) [Salary_Rank],* FROM Employees) SELECT * FROM RNK
 
 
 ---TASK-7
