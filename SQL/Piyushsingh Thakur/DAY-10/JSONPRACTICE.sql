@@ -120,17 +120,3 @@ SET @JSONData = N'{
 SET @JSONData = JSON_MODIFY(@JSONData,'append $.EmployeeInfo.Addresses', 
 JSON_QUERY('{"Address":"Test 2", "City":"Bhavnagar", "State":"Gujarat"}','$'))  
 
-
-DECLARE @JSONData AS NVARCHAR(4000)  
-SET @JSONData = N'{  
-    "EmployeeInfo":{  
-        "FirstName":"Jignesh",  
-        "LastName":"Trivedi",  
-        "Code":"CCEEDD",  
-        "Addresses":[  
-            { "Address":"Test 0", "City":"Gandhinagar", "State":"Gujarat"},  
-            { "Address":"Test 1", "City":"Gandhinagar", "State":"Gujarat"}  
-        ]  
-    }  
-}'  
-SELECT * FROM OPENJSON(@JSONData) 
