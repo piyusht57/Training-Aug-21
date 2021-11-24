@@ -1,0 +1,13 @@
+D:\Training-Aug-21\C#\Piyushsingh Thakur\Day-4\Practive\Practive\bin\Debug\netcoreapp3.1\Practive.exe
+D:\Training-Aug-21\C#\Piyushsingh Thakur\Day-4\Practive\Practive\bin\Debug\netcoreapp3.1\Practive.deps.json
+D:\Training-Aug-21\C#\Piyushsingh Thakur\Day-4\Practive\Practive\bin\Debug\netcoreapp3.1\Practive.runtimeconfig.json
+D:\Training-Aug-21\C#\Piyushsingh Thakur\Day-4\Practive\Practive\bin\Debug\netcoreapp3.1\Practive.runtimeconfig.dev.json
+D:\Training-Aug-21\C#\Piyushsingh Thakur\Day-4\Practive\Practive\bin\Debug\netcoreapp3.1\Practive.dll
+D:\Training-Aug-21\C#\Piyushsingh Thakur\Day-4\Practive\Practive\bin\Debug\netcoreapp3.1\Practive.pdb
+D:\Training-Aug-21\C#\Piyushsingh Thakur\Day-4\Practive\Practive\obj\Debug\netcoreapp3.1\Practive.GeneratedMSBuildEditorConfig.editorconfig
+D:\Training-Aug-21\C#\Piyushsingh Thakur\Day-4\Practive\Practive\obj\Debug\netcoreapp3.1\Practive.AssemblyInfoInputs.cache
+D:\Training-Aug-21\C#\Piyushsingh Thakur\Day-4\Practive\Practive\obj\Debug\netcoreapp3.1\Practive.AssemblyInfo.cs
+D:\Training-Aug-21\C#\Piyushsingh Thakur\Day-4\Practive\Practive\obj\Debug\netcoreapp3.1\Practive.csproj.CoreCompileInputs.cache
+D:\Training-Aug-21\C#\Piyushsingh Thakur\Day-4\Practive\Practive\obj\Debug\netcoreapp3.1\Practive.dll
+D:\Training-Aug-21\C#\Piyushsingh Thakur\Day-4\Practive\Practive\obj\Debug\netcoreapp3.1\Practive.pdb
+D:\Training-Aug-21\C#\Piyushsingh Thakur\Day-4\Practive\Practive\obj\Debug\netcoreapp3.1\Practive.genruntimeconfig.cache
