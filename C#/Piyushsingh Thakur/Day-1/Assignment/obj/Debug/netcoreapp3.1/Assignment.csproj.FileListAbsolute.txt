@@ -1,0 +1,13 @@
+D:\Training-Aug-21\C#\Piyushsingh Thakur\Day-1\Assignment\bin\Debug\netcoreapp3.1\Assignment.exe
+D:\Training-Aug-21\C#\Piyushsingh Thakur\Day-1\Assignment\bin\Debug\netcoreapp3.1\Assignment.deps.json
+D:\Training-Aug-21\C#\Piyushsingh Thakur\Day-1\Assignment\bin\Debug\netcoreapp3.1\Assignment.runtimeconfig.json
+D:\Training-Aug-21\C#\Piyushsingh Thakur\Day-1\Assignment\bin\Debug\netcoreapp3.1\Assignment.runtimeconfig.dev.json
+D:\Training-Aug-21\C#\Piyushsingh Thakur\Day-1\Assignment\bin\Debug\netcoreapp3.1\Assignment.dll
+D:\Training-Aug-21\C#\Piyushsingh Thakur\Day-1\Assignment\bin\Debug\netcoreapp3.1\Assignment.pdb
+D:\Training-Aug-21\C#\Piyushsingh Thakur\Day-1\Assignment\obj\Debug\netcoreapp3.1\Assignment.csproj.AssemblyReference.cache
+D:\Training-Aug-21\C#\Piyushsingh Thakur\Day-1\Assignment\obj\Debug\netcoreapp3.1\Assignment.AssemblyInfoInputs.cache
+D:\Training-Aug-21\C#\Piyushsingh Thakur\Day-1\Assignment\obj\Debug\netcoreapp3.1\Assignment.AssemblyInfo.cs
+D:\Training-Aug-21\C#\Piyushsingh Thakur\Day-1\Assignment\obj\Debug\netcoreapp3.1\Assignment.csproj.CoreCompileInputs.cache
+D:\Training-Aug-21\C#\Piyushsingh Thakur\Day-1\Assignment\obj\Debug\netcoreapp3.1\Assignment.dll
+D:\Training-Aug-21\C#\Piyushsingh Thakur\Day-1\Assignment\obj\Debug\netcoreapp3.1\Assignment.pdb
+D:\Training-Aug-21\C#\Piyushsingh Thakur\Day-1\Assignment\obj\Debug\netcoreapp3.1\Assignment.genruntimeconfig.cache
