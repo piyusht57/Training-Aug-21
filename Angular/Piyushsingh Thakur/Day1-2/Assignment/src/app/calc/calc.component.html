@@ -1,0 +1,21 @@
+<h1>Angular Practice</h1>
+<form>
+        <label for="width" class="form-lable">
+            <h3>Enter Number 1:</h3>
+        </label>
+        <input type="number" class="form-control" name="num1" [(ngModel)]="num1">
+
+        <label for="length" class="form-lable">
+            <h3>Enter Number 2 :</h3>
+        </label>
+        <input type="number" class="form-control" name="num2" [(ngModel)]="num2">
+        <br><br><br>
+
+        <div class="">
+            <button (click)="add()" class="btn btn-primary">Addition</button>&nbsp;
+            <button (click)="sub()" class="btn btn-primary"> Substraction </button>&nbsp;
+            <button (click)="mul()" class="btn btn-primary">Multiplication </button>&nbsp;
+            <button (click)="div()" class="btn btn-primary"> Division </button>
+        </div>
+    
+</form>

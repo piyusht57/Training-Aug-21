@@ -1,0 +1,16 @@
+#one{
+    background-color: rgb(135, 168, 168);
+    height: max-content;
+    margin: auto;
+    height: 500px;
+}
+
+#two{
+    margin: auto;
+    height: max-content;
+    background-color: rgb(106, 168, 137);
+}
+
+#login{
+    margin-right: auto;
+}

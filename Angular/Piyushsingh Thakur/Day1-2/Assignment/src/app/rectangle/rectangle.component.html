@@ -1,0 +1,18 @@
+<h1>Angular Day-1 Assignment-1</h1>
+
+<form>
+<div class="form-group">
+
+    <label for="width" class="form-lable"><h3>Enter Width : </h3></label>
+    <input type="number" class="form-control" name="width" [(ngModel)]="width">
+    
+    <label for="length" class="form-lable"><h3>Enter Length :</h3> </label>
+    <input type="number" class="form-control" name="length" [(ngModel)]="length">
+    
+    <br><br><br>
+    
+    <button (click)="area()" class="btn btn-primary">Find Area of Rectangle</button>
+    <br><br>
+    <label for="result">Area of Rectangle : {{ result }}</label>
+</div>
+</form>

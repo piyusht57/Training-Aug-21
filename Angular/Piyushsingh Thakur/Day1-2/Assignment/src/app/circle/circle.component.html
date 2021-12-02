@@ -1,0 +1,11 @@
+<h1>Angular Day-1 Assignment-3</h1>
+<form>
+    <div class="form-group">
+        <label for="radius" class="form-lable"><h3>Enter Radius :</h3> </label>
+        <input type="number" class="form-control" name="radius" [(ngModel)]="radius" class="form-control">
+    </div><br><br>
+    <button class="btn bg-primary" (click)="area()">Find Area of Circle</button><br><br>
+    <div class="form-group">
+        <label for="result" class="lead">Area of Circle : {{ result.toFixed(2) }}</label>
+    </div>
+</form>

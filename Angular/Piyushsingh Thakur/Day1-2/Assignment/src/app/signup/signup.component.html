@@ -1,0 +1,24 @@
+<h1>Angular Day-1 Assignment-4</h1>
+<form>
+
+    <label for="name" class="form-lable"><h3>Name :</h3> </label>
+    <input type="text" class="form-control" name="name" [(ngModel)]="name">
+
+
+    <label for="phoneNumber" class="form-lable"><h3>Phone Number : </h3></label>
+    <input type="number" class="form-control"name="phoneNumber" [(ngModel)]="phoneNumber">
+
+
+    <label for="dob" class="form-lable"><h3>Date Of Birth :</h3> </label>
+    <input type="date" class="form-control"name="DOB" [(ngModel)]="DOB">
+
+
+    <label for="address" class="form-lable"><h3>Address :</h3> </label>
+    <input type="text" class="form-control"name="address" [(ngModel)]="address">
+
+
+    <label for="panNumber" class="form-lable"><h3>Pan Number :</h3> </label>
+    <input type="number" class="form-control"name="panNumber" [(ngModel)]="panNumber">
+
+</form><br><br>
+<button (click)="display()" class="btn btn-primary">Check your details</button><br><br>
