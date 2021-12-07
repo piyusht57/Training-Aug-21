@@ -1,0 +1,71 @@
+<div class="container bg-secondary">
+    <br>
+    <h1 class="display-4 text-center text-white m-2">Student List Assignment</h1>
+    <br>
+</div>
+<div class="container m-auto bg-light my-5"><br>
+    <h1 class="display-4">Assignment using ngSwitch</h1>
+    <table class="table table-hover " id="t">
+        <thead class="thead-light">
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Avarage</th>
+            <th>Active</th>
+        </thead>
+        <tbody>
+
+        
+        <tr *ngFor="let student of slist" class="">
+            <td>{{student.Id}}</td>
+            <td>{{student.Name}}</td>
+            <td>{{student.Age}}</td>
+            <td [ngSwitch]="student.Grade">
+                <div *ngSwitchCase="'A'" [ngStyle]="{'color' : 'red'}">{{student.Grade}}</div>
+                <div *ngSwitchCase="'B'" [ngStyle]="{'color' : 'Purple'}">{{student.Grade}}</div>
+                <div *ngSwitchCase="'C'" [ngStyle]="{'color' : 'Blue'}">{{student.Grade}}</div>
+                <div *ngSwitchCase="'D'" [ngStyle]="{'color' : 'Orange'}">{{student.Grade}}</div>
+                <div *ngSwitchCase="'E'" [ngStyle]="{'color' : 'Golden'}">{{student.Grade}}</div>
+            </td>
+            <td>{{student.Avarage}}</td>
+            <td>{{student.Active}}</td>
+            
+        </tr>
+    </tbody>
+    </table><br><hr>
+
+
+    <h1 class="display-4">Assignment using ngIf</h1><br>
+    
+    
+    <table class="table table-hover " id="t">
+        <thead class="thead-light">
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Avarage</th>
+            <th>Active</th>
+        </thead>
+        <tbody>
+
+        
+        <tr *ngFor="let student of slist" class="">
+            <td>{{student.Id}}</td>
+            <td>{{student.Name}}</td>
+            <td>{{student.Age}}</td>
+            <td [ngSwitch]="student.Grade">
+                <div *ngSwitchCase="'A'" [ngStyle]="{'color' : 'red'}">{{student.Grade}}</div>
+                <div *ngSwitchCase="'B'" [ngStyle]="{'color' : 'Purple'}">{{student.Grade}}</div>
+                <div *ngSwitchCase="'C'" [ngStyle]="{'color' : 'Blue'}">{{student.Grade}}</div>
+                <div *ngSwitchCase="'D'" [ngStyle]="{'color' : 'Orange'}">{{student.Grade}}</div>
+                <div *ngSwitchCase="'E'" [ngStyle]="{'color' : 'Golden'}">{{student.Grade}}</div>
+            </td>
+            <td>{{student.Avarage}}</td>
+            <td *ngIf="student.Active===true">{{student.Active}}</td>
+            
+        </tr>
+    </tbody>
+    </table><br>
+</div>
